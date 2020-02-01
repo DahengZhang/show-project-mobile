@@ -1,0 +1,40 @@
+.article {
+    padding: 60px 18px 10px;
+    background-color: #ffffff;
+    .title {
+        color: #2f2f2f;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.4;
+
+        margin: 15px 0;
+    }
+    .article_info {
+        margin-bottom: 20px;
+        .info {
+            .user_avatar {
+                width: 34px;
+                height: 34px;
+                border-radius: 50%;
+                margin-right: 5px;
+            }
+            .user_name {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 16px;
+                color: #484848;
+            }
+        }
+        .meta {
+            font-size: 13px;
+            color: #b1b1b1;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+    }
+    .content {
+        .article_pic {
+            width: 100%;
+        }
+    }
+}
