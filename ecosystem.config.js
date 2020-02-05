@@ -1,7 +1,7 @@
 module.exports = {
     apps: [{
         name: 'show-project-mobile',
-        script: './app.js',
+        script: 'start',
         instances: 1,
         autorestart: true,
         watch: false,
