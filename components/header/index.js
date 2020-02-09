@@ -23,13 +23,13 @@ class Header extends Component {
                 <Logo className={headerStyle.logo} />
                 <span className={headerStyle.tip}>写你想说</span>
                 {
-                    this.props.name
-                    ? <div onClick={this.logout} className={[headerStyle.user, publicStyle.vertical_middle].join(' ')}>
-                        <img className={headerStyle.avatar} src={this.props.avatar} alt={this.props.name} />
-                    </div>
-                    : <a href={`http://passport.dahengzhang.show`} className={[headerStyle.sign_in, publicStyle.vertical_middle].join(' ')}>
-                        <span>登录</span>
-                    </a>
+                    // this.props.name
+                    // ? <div onClick={this.logout} className={[headerStyle.user, publicStyle.vertical_middle].join(' ')}>
+                    //     <img className={headerStyle.avatar} src={this.props.avatar} alt={this.props.name} />
+                    // </div>
+                    // : <a href={`http://passport.dahengzhang.show`} className={[headerStyle.sign_in, publicStyle.vertical_middle].join(' ')}>
+                    //     <span>登录</span>
+                    // </a>
                 }
             </div>
         )
