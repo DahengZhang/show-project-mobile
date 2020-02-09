@@ -13,8 +13,13 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "atob": "^2.1.2",
+        "axios": "^0.19.2",
+        "github-markdown-css": "^3.0.1",
         "koa": "^2.11.0",
         "koa-router": "^8.0.6",
+        "markdown-it": "^10.0.0",
+        "moment": "^2.24.0",
         "next": "^9.2.1",
         "next-redux-wrapper": "^4.0.1",
         "react": "^16.12.0",
