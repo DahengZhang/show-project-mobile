@@ -1,8 +1,12 @@
 import App from 'next/app'
+import { Provider } from 'react-redux'
+import withRedux from 'next-redux-wrapper'
+import makeStore from  'store'
+import { initUser } from 'store/actions/user'
 
-import '../assets/reset.scss'
+import 'assets/reset.scss'
 
-export default class _App extends App {
+class _App extends App {
     static async getInitialProps({Component, ctx}) {
         return {
             pageProps: {
@@ -11,10 +15,18 @@ export default class _App extends App {
         }
     }
 
+    componentDidMount () {
+        this.props.store.dispatch(initUser())
+    }
+
     render() {
-        const { Component, pageProps } = this.props
+        const { Component, pageProps, store } = this.props
         return (
-            <Component {...pageProps} />
+            <Provider store={store}>
+                <Component {...pageProps} />
+            </Provider>
         )
     }
 }
+
+export default withRedux(makeStore)(_App)
